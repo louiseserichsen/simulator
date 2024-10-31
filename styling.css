@@ -1,0 +1,65 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+  }
+  
+  #app {
+    text-align: center;
+  }
+  
+  .cat {
+    width: 120px;
+    height: 120px;
+    background-color: #ffdd57;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+  }
+  
+  .status-bars {
+    margin-top: 20px;
+  }
+  
+  .status-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .status-bar-fill {
+    height: 100%;
+    transition: width 0.3s;
+  }
+  
+  .food { background-color: #ff4d4d; }
+  .toilet { background-color: #ffcc66; }
+  .health { background-color: #4dff4d; }
+  .play { background-color: #4dc4ff; }
+  
+  .icon-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .icon-button {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.1);
+  }

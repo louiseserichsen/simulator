@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kat Pleje Simulator</title>
+
+  <link rel="stylesheet" href="styling.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+  <div id="app">
+
+    <div class="cat">🐱</div>
+
+  
+    <div class="status-bars">
+      <div class="status-bar">
+        <div class="status-bar-fill food" :style="{ width: food + '%' }"></div>
+      </div>
+      <div class="status-bar">
+        <div class="status-bar-fill toilet" :style="{ width: toilet + '%' }"></div>
+      </div>
+      <div class="status-bar">
+        <div class="status-bar-fill health" :style="{ width: health + '%' }"></div>
+      </div>
+      <div class="status-bar">
+        <div class="status-bar-fill play" :style="{ width: play + '%' }"></div>
+      </div>
+    </div>
+    <!-- Ikoner til at interagere med katten -->
+    <div class="icon-buttons">
+      <span class="icon-button" @click="feedCat">🍲</span>
+      <span class="icon-button" @click="cleanToilet">🚽</span>
+      <span class="icon-button" @click="healCat">💊</span>
+      <span class="icon-button" @click="playWithCat">🎾</span>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
